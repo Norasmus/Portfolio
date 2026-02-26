@@ -1,0 +1,49 @@
+pipeline:
+  name: logistics_etl
+  schedule: "0 6 * * *"
+
+source:
+  type: postgresql
+  host: ${SOURCE_DB_HOST}
+  port: 5432
+  database: logistics_oltp
+  tables:
+    - shipments
+    - carriers
+    - warehouses
+    - customers
+
+destination:
+  type: snowflake
+  account: ${SNOWFLAKE_ACCOUNT}
+  database: LOGISTICS_DW
+  schema: STAGING
+  warehouse: ETL_WH
+
+transforms:
+  - name: clean_shipments
+    input: shipments
+    output: stg_shipments
+    operations:
+      - remove_duplicates
+      - standardize_dates
+      - validate_costs
+
+  - name: enrich_carriers
+    input: carriers
+    output: stg_carriers
+    operations:
+      - lookup_carrier_ratings
+      - calculate_performance_score
+
+  - name: build_fact_shipments
+    input: [stg_shipments, stg_carriers, warehouses]
+    output: fact_shipments
+    operations:
+      - join_dimensions
+      - calculate_metrics
+      - generate_surrogate_keys
+
+logging:
+  level: INFO
+  output: logs/pipeline.log
