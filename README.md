@@ -2,7 +2,7 @@
 
 A professional portfolio website showcasing 10+ years of experience in business intelligence, data engineering, and analytics leadership.
 
-**Live site:** [eseveriano6.github.io/Portfolio](https://eseveriano6.github.io/Portfolio/)
+**Live site:** [Norasmus.github.io/Portfolio](https://Norasmus.github.io/Portfolio/)
 
 ## Tech Stack
 

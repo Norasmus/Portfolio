@@ -10,7 +10,7 @@ export const personalInfo = {
     'Predictive Modeling',
   ],
   email: 'eric.severiano@example.com',
-  github: 'https://github.com/eseveriano6',
+  github: 'https://github.com/Norasmus',
   linkedin: 'https://linkedin.com/in/',
   resumeUrl: '/resume.pdf',
 };
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     description:
       'Interactive supply chain KPI analysis with synthetic logistics data, cost-per-shipment trends, and warehouse throughput visualizations.',
     techTags: ['Python', 'pandas', 'Plotly', 'Jupyter'],
-    githubUrl: 'https://github.com/eseveriano6/Portfolio/tree/main/projects/supply-chain-analytics',
+    githubUrl: 'https://github.com/Norasmus/Portfolio/tree/main/projects/supply-chain-analytics',
     folder: 'supply-chain-analytics',
   },
   {
@@ -184,7 +184,7 @@ export const projects: Project[] = [
     description:
       'Modular ETL/ELT pipeline architecture with Airflow DAG definitions, YAML configuration, and extract/transform/load scripts.',
     techTags: ['Python', 'Airflow', 'YAML', 'Docker'],
-    githubUrl: 'https://github.com/eseveriano6/Portfolio/tree/main/projects/etl-pipeline-demo',
+    githubUrl: 'https://github.com/Norasmus/Portfolio/tree/main/projects/etl-pipeline-demo',
     folder: 'etl-pipeline-demo',
   },
   {
@@ -193,7 +193,7 @@ export const projects: Project[] = [
     description:
       'ML model for freight volume prediction using time-series forecasting with model evaluation and prediction visualizations.',
     techTags: ['Python', 'scikit-learn', 'Prophet', 'matplotlib'],
-    githubUrl: 'https://github.com/eseveriano6/Portfolio/tree/main/projects/predictive-freight-forecasting',
+    githubUrl: 'https://github.com/Norasmus/Portfolio/tree/main/projects/predictive-freight-forecasting',
     folder: 'predictive-freight-forecasting',
   },
   {
@@ -202,7 +202,7 @@ export const projects: Project[] = [
     description:
       'Star-schema data warehouse with optimized views, stored procedures for KPI refresh, and complex analytical queries.',
     techTags: ['PostgreSQL', 'SQL', 'Star Schema', 'Analytics'],
-    githubUrl: 'https://github.com/eseveriano6/Portfolio/tree/main/projects/sql-analytics-warehouse',
+    githubUrl: 'https://github.com/Norasmus/Portfolio/tree/main/projects/sql-analytics-warehouse',
     folder: 'sql-analytics-warehouse',
   },
 ];
